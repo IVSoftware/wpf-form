@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Windows.Controls;
 
 namespace IVSoftware
 {
@@ -20,5 +21,6 @@ namespace IVSoftware
         {
             HandleCreated?.Invoke(this, e);
         }
+        public TextBox Console { get; set; }
     }
 }
