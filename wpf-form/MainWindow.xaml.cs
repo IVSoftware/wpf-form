@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// REFERENCE: https://www.c-sharpcorner.com/UploadFile/mahakgupta/simple-data-binding-in-wpf/
 namespace wpf_window_ex
 {
     /// <summary>
@@ -24,6 +25,11 @@ namespace wpf_window_ex
         public MainWindow()
         {
             InitializeComponent();
+        }
+        protected override void OnLoad(RoutedEventArgs e)
+        {
+            base.OnLoad(e);
+            textBox.AppendText("Loaded." + Environment.NewLine);
         }
     }
 }
