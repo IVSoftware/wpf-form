@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace IVSoftware
 {
-    class Console : TextBox, IConsole
+    public class Console : TextBox, IConsole
     {
         public void ReadKey()
         {

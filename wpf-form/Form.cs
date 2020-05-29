@@ -14,12 +14,13 @@ namespace IVSoftware
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
+            OnHandleCreated(e);
         }
         protected virtual void OnLoad(System.Windows.RoutedEventArgs e) 
         {  
         }
         public event EventHandler HandleCreated;
-        protected virtual void OnHandleCreated (System.Windows.RoutedEventArgs e) 
+        protected virtual void OnHandleCreated (EventArgs e) 
         {
             HandleCreated?.Invoke(this, e);
         }

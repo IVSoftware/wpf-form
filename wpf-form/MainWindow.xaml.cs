@@ -26,10 +26,15 @@ namespace wpf_window_ex
         {
             InitializeComponent();
         }
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            base.OnHandleCreated(e);
+            Console.WriteLine("Native window handle has been created.");
+        }
         protected override void OnLoad(RoutedEventArgs e)
         {
             base.OnLoad(e);
-            textBox.AppendText("Loaded." + Environment.NewLine);
+            Console.WriteLine("Form has loaded and ready to interact.");
         }
     }
 }
