@@ -12,6 +12,6 @@
             x:Name="Console" 
             Margin="10"
             TextWrapping="Wrap" 
-            AcceptsReturn="True" AcceptsTab="True" MinLines="100" BorderThickness="0"/>
+            AcceptsReturn="True" AcceptsTab="True" MinLines="100" BorderThickness="1" Padding="5"/>
     </Grid>
 </iv:Form>
